@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ServiceItem } from '../../models/service.model';
+import { ServiceItem } from '../models/service.model';
 
 @Component({
   selector: 'app-service-card',

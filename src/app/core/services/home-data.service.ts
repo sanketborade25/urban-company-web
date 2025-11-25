@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { ServiceCategory, ServiceItem } from '../models/service.model';
+import { ServiceCategory, ServiceItem } from '../../shared/models/service.model';
 
 @Injectable({
   providedIn: 'root',

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ServiceCategory } from '../../models/service.model';
+import { ServiceCategory } from '../models/service.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
