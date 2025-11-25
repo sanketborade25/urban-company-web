@@ -1,0 +1,73 @@
+import { Component, Input } from '@angular/core';
+import { ServiceCategory } from '../../models/service.model';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-service-category-card',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <div class="card">
+      <div class="card-icon">{{ category.icon }}</div>
+      <h3 class="card-title">{{ category.name }}</h3>
+      <p class="card-description">{{ category.description }}</p>
+      <button class="card-link">Browse →</button>
+    </div>
+  `,
+  styles: [
+    `
+    .card {
+      padding: 1.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: white;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-color: var(--primary-color);
+      transform: translateY(-2px);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-title {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
+    .card-description {
+      margin: 0 0 1rem 0;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    .card-link {
+      background: transparent;
+      color: var(--primary-color);
+      border: none;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0;
+      transition: color 0.2s;
+    }
+
+    .card-link:hover {
+      color: #ff6b1a;
+    }
+    `
+  ],
+})
+export class ServiceCategoryCardComponent {
+  @Input() category!: ServiceCategory;
+}
