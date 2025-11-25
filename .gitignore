@@ -1,0 +1,67 @@
+# Angular build artifacts
+dist/
+out-tsc/
+
+# Angular cache
+.angular/
+
+# Node dependencies
+node_modules/
+
+# Environment files (never commit credentials)
+src/environments/environment.ts
+src/environments/environment.prod.ts
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+logs/
+*.log
+
+# IDE / editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+/.sass-cache
+/.cache
+.tmp/
+temp/
+*.tmp
+
+# Compiled output
+*.js.map
+*.css.map
+
+# TypeScript transient files
+*.tsbuildinfo
+
+# Local env / secret config
+.env
+.env.local
+.env.*.local
+
+# Package manager lock optional (if not using)
+# Uncomment if you don't want lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Generated Coverage
+coverage/
+
+# VS Code settings (optional)
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
