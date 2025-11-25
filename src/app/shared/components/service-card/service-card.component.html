@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">{{ service.name }}</h3>
+  </div>
+  <p class="card-description">{{ service.description }}</p>
+  <div class="card-footer">
+    <div class="price">
+      <span class="price-label">Starting at</span>
+      <span class="price-value">{{ '$' + service.startingPrice }}</span>
+    </div>
+    <div class="rating">
+      <span class="stars">⭐</span>
+      <span class="rating-value">{{ service.rating }}</span>
+    </div>
+  </div>
+</div>

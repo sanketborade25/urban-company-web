@@ -1,0 +1,16 @@
+<section class="testimonials">
+  <div class="testimonials-container">
+    <div class="section-header">
+      <h2 class="section-title">Why Choose UrbanClone?</h2>
+      <p class="section-subtitle">Trusted by millions of users worldwide</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div *ngFor="let item of testimonials" class="testimonial-card">
+        <div class="testimonial-icon">{{ item.icon }}</div>
+        <h3 class="testimonial-title">{{ item.title }}</h3>
+        <p class="testimonial-description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
